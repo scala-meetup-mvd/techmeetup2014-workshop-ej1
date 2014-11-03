@@ -1,5 +1,5 @@
 
-# Scala Workshop - Scala Meetup 2014
+# Scala Workshop - Tech Meetup 2014
 
 ## Ejercicio 1
 
