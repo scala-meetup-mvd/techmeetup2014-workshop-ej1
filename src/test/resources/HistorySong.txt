@@ -1,0 +1,129 @@
+
+
+id:-413XXX
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = P1 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+PLAYLIST: XXXXXXXXXX1
+Corrida 1:
+
+#	SongId	SeedId	SongName						ArtistName				ArtistSeedId
+1	212441	271372	Look Away						Chicago					755
+2	193984	251796	I'll Be Loving You (Forever)	New Kids On The Block	3168
+3	208766	268082	Its Still Rock And Roll To Me	Billy Joel				502
+4	211272	270765	The Rose						Bette Midler			483
+5	105721	103489	Don't Wanna Lose You			Gloria Estefan			1596
+6	188053	243121	Wake Me Up Before You 			Go-Go	Wham!			242905
+7	107185	104691	Beat It							Michael Jackson			3002
+8	158844	214209	Money for Nothing				Dire Straits			197230
+9	186382	240681	Every Breath You Take			The Police				4164
+10	191411	249254	Rosanna							Toto					248889
+11	42537	45850	Sweet Child O' Mine				Guns N Roses			1689
+12	201215	260017	Babe							Styx					4031
+13	215017	275543	Cars							Gary Numan				275410
+14	11299	15325	Jump							Van Halen				4341
+15	190657	248489	Upside Down						Diana Ross				247459
+16	211327	271730	Do That To Me One More Time		Captain & Tennille		271598
+17	111589	112362	Red Red Wine					UB-40					4312
+18	211417	271787	There'll Be Sad Songs (to mak	Billy Ocean				271579
+19	169144	226222	Don't You (Forget About Me)		Billy Idol				501
+20	203043	261978	Invisible Touch					Genesis					261821
+21	214681	275162	I Want To Know What Love Is		Foreigner				192741
+22	190428	248987	Straight Up						Paula Abdul				248860
+23	216869	277566	Missing You						John Waite				277146
+24	213545	273877	When I'm With You				Sheriff					273773
+25	102694	95702	Like a Prayer					Madonna					2792
+
+
+Corrida 4
+PLAYLIST2: XXXXXXXXX
+
+# 	SongId	SeedId	SongName													ArtistName					ArtistSeedId
+1	190961	245209	Hipnotízame													Wisin y Yandel				4444
+2	137802	140234	Me Toca Celebrar											Tito El Bambino				4213
+3	273291	338455	Como Si Mataran												El Gran Jaypee				337648
+4	257749	321021	Mi Alma Se Muere (Remix Dos) [feat. Pitbull, Omega & Fuego]	Chosen Few					320978
+5	257263	320573	Murio														Jenny La Sexy Voz			319975
+6	106232	103936	La Vida Es Así												Ivy Queen					1854
+7	130280	130869	Lovumba														Daddy Yankee				946
+8	257560	320837	Mi Declaracion de Amor										Lil Silvio & El Vega		319984
+9	113955	114681	Contéstame el Teléfono (feat. Flex)							Alexis y Fido				184
+10	137619	139728	Cuando Me Dirá												Nengo Flow					3160
+11	119761	122118	Si Tu Te Vas												Aldo El Arquitecto			121587
+12	117986	118553	Amor Bonito													Eddy Lover					1191
+13	104159	94885	Hacerlo Así (feat. Guelo Star)								Jowell & Randy				2083
+14	177413	233549	Lo Que Me Pasa												Juan Magan					133590
+15	135452	135776	Left Right Left												Cosculluela					883
+16	153271	208872	Como Explicarle												J Alvarez					115751
+17	90400	87227	Ta'Bueno El Ambiente										Arcangel					307
+18	107812	105204	Ese Hombre Soy Yo											Chino y Nacho				93813
+19	130278	130867	Ella Me Pide Something										J King y Maximan			97398
+20	135468	135559	Ella Pide de Eso											Franco El Gorila			1490
+21	279710	345212	La Curiosidad												Maluma						298983
+22	81553	80821	Dile														MJ							3061
+23	93612	89319	Besos Mojados												Wisin y Yandel				4444
+24	273295	338457	Callejón (feat. K.I.D)										El Gran Jaypee				337648
+25	257748	321043	Reggaeton Latino (Remix 2) [feat. Fat Joe]					Chosen Few					320978
+
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = P2= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+Corrida 2
+PLAYLIST2: XXXXXXXXX
+
+# SongId	SeedId	SongName											ArtistName					ArtistSeedId
+1 190961	245209	Hipnotízame											Wisin y Yandel				4444
+2 135456	135772	No Piensas en Mi									Cosculluela					883
+3 100972	94695	Quiere Pa' Que Te Quieran							Dyland & Lenny				93829
+4 224484	284674	Desnudarte (Bobby 'El Lobo Negro')					Baby Rasta & Gringo			389
+5 130280	130869	Lovumba												Daddy Yankee				946
+6 253772	316975	Se Acaba El Tiempo (Remix)							Maximus Wel, J. Alvarez & Maluma	357901
+7 111194	113114	Good Looking										Don Omar					1139
+8 246207	311558	Un Beso	Lui-G 										21+							266466
+9 257560	320837	Mi Declaracion de Amor								Lil Silvio & El Vega		319984
+10 135463	135495	Nobody Like You (English) [feat. Oneill]			Franco El Gorila			1490
+11 115794	115960	Si No Le Contesto (feat. Tony Dize, Zion & Lennox)	Plan B						111333
+12 224438	284668	Amor Real (feat. Yandel)							Gocho						116928
+13 137802	140234	Me Toca Celebrar									Tito El Bambino				4213
+14 284435	349930	Passion Whine (feat. Sean Paul)						Farruko						96967
+15 104151	96230	No Fue una Noche Normal								Jowell & Randy				2083
+16 117972	118551	Díme												Eddy Lover					1191
+17 113955	114681	Contéstame el Teléfono (feat. Flex)					Alexis y Fido				184
+18 71995	73612	Te Quiero											Flex						1455
+19 257564	320841	Amor a Primera Vista								Lil Silvio & El Vega		319984
+20 253776	316978	Si Me Necesitas (feat. Andy Rivera)					Baby Rasta & Gringo			389
+21 213383	273565	Pasarela (Miguel Vargas Electro Mambo)				Daddy Yankee				946
+22 88991	86186	Sexy Movimiento										Wisin y Yandel				4444
+23 273281	338448	Hacer Escandalo										El Gran Jaypee				337648
+24 71178	72900	Soy Igual Que Tú (ft. Toby Love)					Alexis y Fido				184
+25 100971	95250	Caliente (feat. Arcángel)							Dyland & Lenny				93829
+
+Corrida 3
+PLAYLIST: XXXXXXXXX
+
+
+# 	SongId	SeedId	SongName											ArtistName					ArtistSeedId
+1	212484	272875	Ride like the wind									Christopher Cross			271860
+2	212969	273187	Karma Chameleon										Culture Club				271873
+3	211415	271786	Caribbean Queen (no more love						Billy Ocean					271579
+4	103151	102185	One More Night										Phil Collins				97295
+5	186592	240755	Kiss												Prince & The Revolution		240491
+6	108311	110047	You Give Love A Bad Name							Bon Jovi					546
+7	190746	248568	Shout												Tears for Fears				247508
+8	212440	272857	Everytime You Go Away								Paul Young					272117
+9	211288	270767	Amanda												Boston						553
+10	20937	24699	Hello												Lionel Richie				2437
+11	66198	68555	The Tide Is High									Blondie						523
+12	208462	267671	Walk Like An Egyptian								The Bangles					267495
+13	150372	206061	Down Under											Men At Work					192240
+14	212174	272644	Circle Ft The New Bohemians							Edie Brickell				271916
+15	216942	277632	We Built This City									Starship					273783
+16	216869	277566	Missing You											John Waite					277146
+17	207199	277230	Take On Me											a-ha						270377
+18	216348	276915	Don't You Want Me (Original Version)				The Human League			255270
+19	216803	277191	Let's Dance											David Bowie					1000
+20	211256	271683	When I See You Smile								Bad English					271561
+21	107188	104694	Bad													Michael Jackson				3002
+22	216931	277607	Let's Hear It for the Boy							Deniece Williams			277131
+23	212415	272841	Girl, I'm Gonna Miss You							Milli Vanilli				272080
+24	103152	102186	Sussudio											Phil Collins				97295
+25	186049	241550	I Feel for You										Chaka Khan					241191
+
