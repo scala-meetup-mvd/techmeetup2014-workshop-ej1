@@ -44,7 +44,7 @@ PLAYLIST2: XXXXXXXXX
 4	257749	321021	Mi Alma Se Muere (Remix Dos) [feat. Pitbull, Omega & Fuego]	Chosen Few					320978
 5	257263	320573	Murio														Jenny La Sexy Voz			319975
 6	106232	103936	La Vida Es Así												Ivy Queen					1854
-7	130280	130869	Lovumba														Daddy Yankee				946
+7	188053	243121	Wake Me Up Before You 										Go-Go	Wham!				242905
 8	257560	320837	Mi Declaracion de Amor										Lil Silvio & El Vega		319984
 9	113955	114681	Contéstame el Teléfono (feat. Flex)							Alexis y Fido				184
 10	137619	139728	Cuando Me Dirá												Nengo Flow					3160
