@@ -11,10 +11,14 @@ El contenido es una transcripción (menos algunos datos) de un archivo originalm
 
 El objetivo es detectar si existen canciones duplicadas y si las hubiere emitir cuales son, cuantas son y cuantas veces aparece cada una. Alcanza con emitir los ids (columnas song id o seed id).
 
-#### Tests
+#### Implementación y Tests
 
-TBD
+En `src/test/scala/` encontrarás un archivo `DuplictesTest` con los tests vacíos para validar la implementación.
+En `src/main/scala` el archivo `Duplicates` con funciones sin implementación para completar.
 
 #### Técnicas que puedes aplicar
 
-TBD
+* String splitting y pattern matching contra arrays
+* Pattern matching contra expresiones regulares.
+
+

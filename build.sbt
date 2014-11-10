@@ -1,4 +1,4 @@
-name := "ScalaWorkshopV2014"
+name := "ScalaWorkshopV2014-ej1"
 
 organization := "org.scala-meetup-mvd"
 
