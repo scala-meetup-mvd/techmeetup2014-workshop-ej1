@@ -11,7 +11,7 @@ class Duplicates(val fileName: String) {
 
   def allSongs: Seq[String] = ???
 
-  def uniqueSongs: Seq[String] = ???
+  def distinctSongs: Seq[String] = ???
 
   def duplicateSongs: Seq[String] = ???
 
