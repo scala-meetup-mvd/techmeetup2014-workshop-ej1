@@ -5,14 +5,49 @@
   * FIXME add implementations
   *
   */
+
+import scala.io.Source
+
 class Duplicates(val fileName: String) {
 
-  def lines: Seq[String] = ???
+  val SongRegex = """\d+\s+(\d+)\s+\d+\s+[^\s].*""".r
 
-  def allSongs: Seq[String] = ???
+  def linesWithId: Seq[(Long, String)] = {
+    lines.collect { 
+        case line @ SongRegex(songId) => songId.toLong -> line
+      }
+  }
 
-  def uniqueSongs: Seq[String] = ???
+  def lines: Seq[String] = Source.fromFile(fileName).getLines.toSeq
 
-  def duplicateSongs: Seq[String] = ???
+  def allSongs: Seq[String] = linesWithId.unzip._2
+
+  def uniqueSongs: Seq[String] = {
+    val uniqueSongLines = linesWithId.groupBy(_._1).filter(_._2.size == 1).toSeq
+    
+    val res =
+      for {
+        (songId, lines) <- uniqueSongLines
+        (_, uniqueLine) = lines.head
+      } yield {
+        uniqueLine
+      }
+
+    res
+  }
+
+  def duplicateSongs: Seq[String] = {
+    val dupSongLines = linesWithId.groupBy(_._1).filter(_._2.size >= 2).toSeq
+    
+    val res =
+      for {
+        (songId, lines) <- dupSongLines
+        (_, line) <- lines
+      } yield {
+        line
+      }
+
+    res
+  }
 
 }
