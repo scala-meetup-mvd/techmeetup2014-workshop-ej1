@@ -9,6 +9,7 @@ class DuplicatesTest extends BetterFunSuite  {
   val allLinesCount     = 129
   val allSongsCount     = 100
   val uniqueSongsCount  = 94
+  val duplicateSongsIdCountMap = Map(137802 -> 2, 216869 -> 2, 190961 -> 2, 130280 -> 2, 113955 -> 2, 257560 -> 2)
 
   "Duplicados" should "be able to read all lines" in {
     val dupes = new Duplicates(relativeName)
@@ -30,11 +31,18 @@ class DuplicatesTest extends BetterFunSuite  {
     assert ( dupes.duplicateSongs.size === ( allSongsCount - dupes.distinctSongs.size ) )
   }
 
-  it should "be able to emit the correct count for each duplicated song" in pendingU()
+  it should "find the correct duplicate song ids" in {
+    val dupes = new Duplicates(relativeName)
+    duplicateSongsIdCountMap.keys.foreach { 
+      case song => assert (dupes.duplicateSongsWithCount.keys.exists(_ == song) )
+    }
+  }
 
-  // FIXME ADD tests that test for specific songids. check list equality.
-  it should "find the correct duplicate song ids" in pendingU()
-
-
+  it should "be able to emit the correct count for each duplicated song" in {
+    val dupes = new Duplicates(relativeName)
+    duplicateSongsIdCountMap.foreach { 
+      case (song, count) => assert (dupes.duplicateSongsWithCount.exists(_ == (song, count)) )
+    }
+  }
+  
 }
-
