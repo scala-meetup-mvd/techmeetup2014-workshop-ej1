@@ -9,7 +9,7 @@ class DuplicatesTest extends BetterFunSuite  {
   val allLinesCount     = 129
   val allSongsCount     = 100
   val uniqueSongsCount  = 94
-  val duplicateSongsIdCountMap = Map("137802" -> 2, "216869" -> 2, "190961" -> 2, "130280" -> 2, "113955" -> 2, "257560" -> 2)
+  val duplicateSongsIdCountMap = Map(137802 -> 2, 216869 -> 2, 190961 -> 2, 130280 -> 2, 113955 -> 2, 257560 -> 2)
 
   "Duplicados" should "be able to read all lines" in {
     val dupes = new Duplicates(relativeName)
