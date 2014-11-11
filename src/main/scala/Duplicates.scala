@@ -11,21 +11,19 @@ class Duplicates(val fileName: String) {
 
   val songLineRegEx = """(\d+)\s+(\d+)\s+(\d+)(.*)""".r
 
-  def lines: Seq[String] = Source.fromFile(fileName).getLines.toSeq
-
   val allSongIds = allSongs.map {
       case songLineRegEx(_, songId, _*) => songId
   }
+
+  def lines: Seq[String] = Source.fromFile(fileName).getLines.toSeq
 
   def allSongs: Seq[String] = lines.filter {
       case songLineRegEx(_*) => true
       case _ => false
     }
 
-  def uniqueSongs: Seq[String] = allSongIds
+  def distinctSongs: Seq[String] = allSongIds
     .groupBy(s => s)
-    .mapValues(_.size)
-    .filter {case (song, count) => count == 1}
     .keys
     .toSeq
 
@@ -33,6 +31,11 @@ class Duplicates(val fileName: String) {
     .groupBy(s => s)
     .mapValues(_.size)
     .filter {case (song, count) => count > 1}
-    .flatMap {case (song, count) => List.fill(count)(song) }   
+    .keys
     .toSeq
+
+  def duplicateSongsWithCount: Map[String,Int] = allSongIds
+    .groupBy(s => s)
+    .mapValues(_.size)
+
 }
