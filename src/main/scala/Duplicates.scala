@@ -37,5 +37,6 @@ class Duplicates(val fileName: String) {
   def duplicateSongsWithCount: Map[Long,Int] = allSongIds
     .groupBy(s => s)
     .mapValues(_.size)
+    .filter {case (song, count) => count > 1}
 
 }

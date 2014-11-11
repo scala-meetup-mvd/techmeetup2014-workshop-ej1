@@ -33,16 +33,12 @@ class DuplicatesTest extends BetterFunSuite  {
 
   it should "find the correct duplicate song ids" in {
     val dupes = new Duplicates(relativeName)
-    duplicateSongsIdCountMap.keys.foreach { 
-      case song => assert (dupes.duplicateSongsWithCount.keys.exists(_ == song) )
-    }
+    assert (dupes.duplicateSongsWithCount.keys === duplicateSongsIdCountMap.keys)
   }
 
   it should "be able to emit the correct count for each duplicated song" in {
     val dupes = new Duplicates(relativeName)
-    duplicateSongsIdCountMap.foreach { 
-      case (song, count) => assert (dupes.duplicateSongsWithCount.exists(_ == (song, count)) )
-    }
+    assert (duplicateSongsIdCountMap === dupes.duplicateSongsWithCount)
   }
   
 }
