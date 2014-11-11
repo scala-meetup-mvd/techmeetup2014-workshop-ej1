@@ -19,13 +19,16 @@ class Duplicates(val fileName: String) {
 
   def allSongs: Seq[String] = lines collect { case R(a,b,c) => b }
 
-  def uniqueSongs: Seq[String] = allSongs.toSet.toSeq
+  def distinctSongs: Seq[String] = allSongs.toSet.toSeq
 
   def songsWithCount: Map[String, Int] =
-    allSongs.groupBy(identity).map{ case (k,v) => (k,v.size)}
+    allSongs
+      .groupBy(identity)
+      .map{ case (k,v) => (k,v.size)}
 
   def duplicateSongs: Seq[String] =
-    songsWithCount.collect { case (k,v) if v > 1 => k }
+    songsWithCount
+      .collect { case (k,v) if v > 1 => k }
       .toSeq
 
 }
