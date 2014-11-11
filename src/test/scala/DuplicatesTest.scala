@@ -38,7 +38,7 @@ class DuplicatesTest extends BetterFunSuite  {
 
   it should "be able to emit the correct count for each duplicated song" in {
     val dupes = new Duplicates(relativeName)
-    assert (duplicateSongsIdCountMap === dupes.duplicateSongsWithCount)
+    assert (dupes.duplicateSongsWithCount === duplicateSongsIdCountMap)
   }
   
 }
