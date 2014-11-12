@@ -9,7 +9,7 @@ class Duplicates(val fileName: String) {
 
   def lines: Seq[String] = ???
 
-  def allSongs: Seq[String] = ???
+  def allSongs: Seq[Long] = ???
 
   def distinctSongs: Seq[Long] = ???
 
