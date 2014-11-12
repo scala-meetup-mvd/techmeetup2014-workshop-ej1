@@ -9,10 +9,12 @@ class Duplicates(val fileName: String) {
 
   def lines: Seq[String] = ???
 
-  def allSongs: Seq[String] = ???
+  def allSongs: Seq[Long] = ???
 
-  def distinctSongs: Seq[String] = ???
+  def distinctSongs: Seq[Long] = ???
 
-  def duplicateSongs: Seq[String] = ???
+  def duplicateSongs: Seq[Long] = ???
+
+  def duplicateSongsWithCount: Map[Long,Int] = ???
 
 }
