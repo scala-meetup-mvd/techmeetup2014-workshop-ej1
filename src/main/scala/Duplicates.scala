@@ -17,21 +17,23 @@ class Duplicates(val fileName: String) {
 
   def lines: Seq[String] = Files.readAllLines(path).toVector
 
-  def allSongs: Seq[String] = lines collect { case R(a,b,c) => b }
+  def allSongs: Seq[Long] =
+    lines
+      .collect { case R(a, b, c) => b.toLong }
 
-  def distinctSongs: Seq[String] = allSongs.toSet.toSeq
+  def distinctSongs: Seq[Long] = allSongs.toSet.toSeq
 
-  def songsWithCount: Map[String, Int] =
+  def songsWithCount: Map[Long, Int] =
     allSongs
       .groupBy(identity)
       .map{ case (k,v) => (k,v.size)}
 
-  def duplicateSongs: Seq[String] =
+  def duplicateSongs: Seq[Long] =
     songsWithCount
       .collect { case (k,v) if v > 1 => k }
       .toSeq
 
-  def duplicateSongsWithCount: Map[Long,Int] = 
+  def duplicateSongsWithCount: Map[Long, Int] =
     songsWithCount
       .collect{ case (k,v) if v > 1 => (k,v) }
     
