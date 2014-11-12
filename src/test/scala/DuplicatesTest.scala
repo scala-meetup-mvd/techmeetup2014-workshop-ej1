@@ -4,10 +4,6 @@ class DuplicatesTest extends BetterFunSuite with Solutions {
 
   val relativeName = "src/test/resources/HistorySong.txt"
 
-  val allLinesCount     = 129
-  val allSongsCount     = 100
-  val distinctSongCount  = 94
-
   "Duplicados" should "be able to read all lines" in {
     val dupes = new Duplicates(relativeName)
     assert (dupes.lines.size === allLinesCount)
