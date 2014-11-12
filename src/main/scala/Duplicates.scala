@@ -31,4 +31,9 @@ class Duplicates(val fileName: String) {
       .collect { case (k,v) if v > 1 => k }
       .toSeq
 
+  def duplicateSongsWithCount: Map[Long,Int] = 
+    songsWithCount
+      .collect{ case (k,v) if v > 1 => (k,v) }
+    
+
 }
