@@ -1,3 +1,7 @@
+import java.nio.file.{Files, Paths}
+
+import scala.collection.JavaConversions._
+
 /** Implementación de búsqueda de duplicados.
   *
   * Se construye alrededor de un nombre de archivo.
@@ -7,14 +11,30 @@
   */
 class Duplicates(val fileName: String) {
 
-  def lines: Seq[String] = ???
+  val path = Paths.get(fileName)
 
-  def allSongs: Seq[Long] = ???
+  val R = """^([0-9]*)[ \t]([0-9]*)[ \t]([0-9]*).*""".r
 
-  def distinctSongs: Seq[Long] = ???
+  def lines: Seq[String] = Files.readAllLines(path).toVector
 
-  def duplicateSongs: Seq[Long] = ???
+  def allSongs: Seq[Long] =
+    lines
+      .collect { case R(a, b, c) => b.toLong }
 
-  def duplicateSongsWithCount: Map[Long,Int] = ???
+  def distinctSongs: Seq[Long] = allSongs.distinct.toSeq
 
+  def songsWithCount: Map[Long, Int] =
+    allSongs
+      .groupBy(identity)
+      .map{ case (k,v) => (k,v.size) }
+
+  def duplicateSongs: Seq[Long] =
+    songsWithCount
+      .collect { case (k,v) if v > 1 => k }
+      .toSeq
+
+  def duplicateSongsWithCount: Map[Long, Int] =
+    songsWithCount
+      .collect{ case (k,v) if v > 1 => (k,v) }
+    
 }
