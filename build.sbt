@@ -13,14 +13,14 @@ scalacOptions ++= Seq(
   "-deprecation",
   "-encoding", "UTF-8",         // yes, this is 2 args
   "-Xlint",
-  "-Ywarn-dead-code",           // N.B. doesn't work well with the ??? hole
-  "-Ywarn-numeric-widen",
-  "-Ywarn-value-discard",
   "-Xfuture",
   "-Xexperimental",
   "-Xlog-reflective-calls",
   "-Xcheckinit",
   "-unchecked"
+  //"-Ywarn-dead-code",           // N.B. doesn't work well with the ??? hole
+  //"-Ywarn-numeric-widen",
+  //"-Ywarn-value-discard",
   //"-Xfatal-warnings",           // Does not work well with DelayedInit
   //"-feature",
   //"-language:existentials",
